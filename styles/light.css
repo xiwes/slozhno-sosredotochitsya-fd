@@ -8,29 +8,32 @@
   --header-title-color: #ffc2e6;
   --footer-title-color: #ffc2e6;
   --menu-text-color: #353430;
-  --menu-hover-color: rgb(50 49 45 / 0.4); /*цвет рамки при наведении на пункты меню*/
+  --menu-hover-color: rgb(
+    50 49 45 / 0.4
+  ); /*цвет рамки при наведении на пункты меню*/
   --rec-display: none;
+  --text-link-hover: #353430; /*цвет для hover в светлой теме*/
 }
 
-/* 
- *автоматическое применение светлой темы 
- *если в системе пользователя выбрана светлая тема
- *через медиазапрос prefers-color-scheme
+/*  
+ *автоматическое применение светлой темы  
+ *если в системе пользователя выбрана светлая тема 
+ *через медиазапрос prefers-color-scheme 
  */
 
 @media (prefers-color-scheme: light) {
   :root {
-  --accent-color: #ff8dcb;
-  --main-bg-color: #fff1f7;
-  --main-bg-image: url("../images/cover-image-light.png");
-  --main-heading-color: #353430;
-  --main-text-color: #353430;
-  --article-text-color: #353430;
-  --header-title-color: #ffc2e6;
-  --footer-title-color: #ffc2e6;
-  --menu-text-color: #353430;
-  --menu-hover-color: #32312d66; /*66 = 40% прозрачности в HEX*/
-  --text-link-hover: #353430;
-  --rec-display: none;
+    --accent-color: #ff8dcb;
+    --main-bg-color: #fff1f7;
+    --main-bg-image: url("../images/cover-image-light.png");
+    --main-heading-color: #353430;
+    --main-text-color: #353430;
+    --article-text-color: #353430;
+    --header-title-color: #ffc2e6;
+    --footer-title-color: #ffc2e6;
+    --menu-text-color: #353430;
+    --menu-hover-color: #32312d66; /*66 = 40% прозрачности в HEX*/
+    --text-link-hover: #353430;
+    --rec-display: none;
   }
 }
