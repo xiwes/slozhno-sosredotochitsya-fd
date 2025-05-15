@@ -1,16 +1,16 @@
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
+  /* сохраните этот селектор в приведённом виде. 
   Так стили написанные ниже будут иметь больший вес,чем стили в медиазапросе предпочтений пользователя*/
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
   --main-bg-color: #000028;
-  --main-heading-color: #FF0070;
-  --main-bg-image: url('../images/cover-image-dark.png');
+  --main-heading-color: #ff0070;
+  --main-bg-image: url("../images/cover-image-dark.png");
   --main-text-color: #000028;
-  --article-text-color: #F1B2CE;
-  --header-title-color: #DB00FF;
-  --footer-title-color: #DB00FF;
-  --menu-text-color: #FF0070;
+  --article-text-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --footer-title-color: #db00ff;
+  --menu-text-color: #ff0070;
   --menu-hover-color: #ff007066; /*66 в HEX = 40% прозрачности*/
-  --text-link-hover: #F1B2CE;
+  --text-link-hover: #f1b2ce;
   --rec-display: inline-block; /*отображение элемента*/
 }
