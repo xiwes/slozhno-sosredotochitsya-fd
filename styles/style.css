@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+    background-image: var(--main-bg-image);
 }
 
 .header {
@@ -14,14 +15,12 @@
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   padding: 10px;
-  background-position: bottom;
   justify-items: end;
   min-block-size: 668px;
   height: 100vh;
   box-sizing: border-box;
   margin-bottom: 40px;
-  background-image: var(--main-bg-image);
-  background-size: cover;
+
 
   @media (width >= 768px) {
     margin-bottom: 60px;
@@ -122,6 +121,8 @@
   padding: 0;
   font-weight: var(--main-font-weight);
   line-height: var(--main-line-height);
+  justify-self: end;
+  
 
   @media (width >= 768px) {
     width: 100%;
@@ -129,7 +130,6 @@
   }
 
   @media (width >= 1024px) {
-    width: 100%;
     max-width: 491px;
   }
 }
@@ -138,6 +138,7 @@
   background-color: var(--accent-color);
   color: var(--main-text-color);
   font-size: var(--content-text-size, 18px);
+
 }
 
 .header__theme-menu {
@@ -230,6 +231,7 @@
 
 .text-block {
   display: grid;
+  gap: 10px;
 }
 
 .content-section_title {
@@ -247,7 +249,6 @@
 
   @media (width >= 1024px) {
     max-width: 315px;
-    width: 100%;
   }
 }
 
@@ -324,20 +325,6 @@
   border: 1px solid var(--article-text-color);
 }
 
-/*явное указание для авторежима*/
-@media (prefers-color-scheme: light) {
-  .text-link:hover {
-    border-bottom-color: var(--text-link-hover);
-  }
-}
-
-/*для темной темы в авторежиме*/
-@media (prefers-color-scheme: dark) {
-  .text-link:hover {
-    border-bottom-color: var(--text-link-hover);
-  }
-}
-
 .gallery {
   display: grid;
   gap: 10px;
@@ -396,9 +383,6 @@
   @media (width >= 768px) {
     margin-top: 40px;
   }
-  @media (width >= 1024px) {
-    margin-top: 40px;
-  }
 }
 
 .footer__title {
@@ -413,28 +397,9 @@
   }
 }
 
-.header__subtitle {
-  margin: 0;
-  padding: 0;
-}
-
 .header__subtitle p {
   margin: 0;
   display: block;
-}
-
-@media (width >= 768px) {
-  .header__subtitle {
-    width: 100%;
-    max-width: 364px;
-  }
-}
-
-@media (width >= 1024px) {
-  .header__subtitle {
-    width: 100%;
-    max-width: 491px;
-  }
 }
 
 .header__subtitle-line {
@@ -445,17 +410,4 @@
 
 .header__subtitle-line + .header__subtitle-line {
   margin-top: 10px; /*расстояние между строками*/
-}
-
-@media (width >= 768px) {
-  .header__subtitle {
-    width: 100%;
-    max-width: 364px;
-  }
-}
-
-@media (width >= 1024px) {
-  .header__subtitle {
-    max-width: 491px;
-  }
 }
