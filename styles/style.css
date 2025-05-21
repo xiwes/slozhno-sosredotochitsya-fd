@@ -204,61 +204,63 @@
   border-color: var(--menu-text-color);
 }
 
-.content-section {
-  font-size: var(--main-text-size, 18px);
-  font-style: normal;
-  line-height: var(--main-line-height), 23.4px;
-
-  @media (width >= 768px) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-
-  @media (width >= 1024px) {
-    grid-template-columns: repeat(3, 1fr); /*на десктопах - 3 колонки*/
-  }
-}
-
-.text-blocks {
-  display: grid;
-  gap: 20px;
-
-  @media (width >= 1024px) {
-    grid-column: span 2;
-  }
-}
-
-.text-block {
-  display: grid;
-  gap: 10px;
-}
-
-.content-section_title {
-  color: var(--main-heading-color);
-  margin-bottom: 20px;
-  font-weight: var(--main-font-weight, 700);
-  font-size: var(--main-text-size, 18px);
-}
-
-.content-section_title.causes {
-  @media (width >= 768px) {
-    width: 100%;
-    max-width: 227px;
-  }
-
-  @media (width >= 1024px) {
-    max-width: 315px;
-  }
-}
-
-.text-block_title,
-.text-block-subtitle {
-  background-color: var(--accent-color);
-  color: var(--main-text-color);
+.content-section { 
+  font-size: var(--main-text-size, 18px); 
+  font-style: normal; 
+  line-height: var(--main-line-height), 23.4px; 
+ 
+  @media (width >= 768px) { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    column-gap: 20px; 
+  } 
+ 
+  @media (width >= 1024px) { 
+    grid-template-columns: repeat(3, 1fr); /*на десктопах - 3 колонки*/ 
+  } 
+} 
+ 
+.text-blocks { 
+  display: grid; 
+  gap: 20px; 
+ 
+  @media (width >= 1024px) { 
+    grid-column: span 2; 
+  } 
+} 
+ 
+.text-block { 
+  display: grid; 
+  gap: 10px; 
   margin-bottom: 10px;
-  font-weight: var(--main-font-weight, 700);
-  font-size: var(--main-text-size, 18px);
+} 
+ 
+.content-section_title { 
+  color: var(--main-heading-color); 
+  margin-bottom: 20px; 
+  font-weight: var(--main-font-weight, 700); 
+  font-size: var(--main-text-size, 18px); 
+} 
+ 
+.content-section_title.causes { 
+  @media (width >= 768px) { 
+    width: 100%; 
+    max-width: 227px; 
+  } 
+ 
+  @media (width >= 1024px) { 
+    max-width: 315px; 
+  } 
+} 
+ 
+.text-block_title, 
+.text-block-subtitle { 
+  background-color: var(--accent-color); 
+  color: var(--main-text-color); 
+  margin-bottom: 10px; 
+  font-weight: var(--main-font-weight, 700); 
+  font-size: var(--main-text-size, 18px); 
+
 }
 
 .text-block_title {
@@ -275,6 +277,13 @@
 
 .text-article {
   color: var(--article-text-color);
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  margin-bottom: 20px; /*добавлен отступ снизу*/
+}
+
+.text-article:last-child {
+  margin-bottom: 0; /*убираем отступ у последнего элемента*/
 }
 
 .content {
