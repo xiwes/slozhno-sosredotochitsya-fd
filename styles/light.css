@@ -1,39 +1,38 @@
-:root.theme-light {
-  --accent-color: #ff8dcb;
-  --main-bg-color: #fff1f7;
-  --main-bg-image: url("../images/cover-image-light.png");
-  --main-heading-color: #353430;
-  --main-text-color: #353430;
-  --article-text-color: #353430;
-  --header-title-color: #ffc2e6;
-  --footer-title-color: #ffc2e6;
-  --menu-text-color: #353430;
-  --menu-hover-color: rgb(
-    50 49 45 / 0.4
-  ); /*цвет рамки при наведении на пункты меню*/
-  --rec-display: none;
-  --text-link-hover: #353430; /*цвет для hover в светлой теме*/
-}
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
 
-/*  
- *автоматическое применение светлой темы  
- *если в системе пользователя выбрана светлая тема 
- *через медиазапрос prefers-color-scheme 
- */
+:root.theme-light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
+  --subtitle-background-color: #ff8dcb;
+  --color-subtitle: #353430;
+  --color-no-focus: #ffc2e6;
+  --color-decorated-zone: #353430;
+  --color-text: #353430;
+  --color-title: #353430;
+  --rec: #00000000;
+  --border-button: #32312d66;
+  
+}
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: #ff8dcb;
-    --main-bg-color: #fff1f7;
-    --main-bg-image: url("../images/cover-image-light.png");
-    --main-heading-color: #353430;
-    --main-text-color: #353430;
-    --article-text-color: #353430;
-    --header-title-color: #ffc2e6;
-    --footer-title-color: #ffc2e6;
-    --menu-text-color: #353430;
-    --menu-hover-color: #32312d66; /*66 = 40% прозрачности в HEX*/
-    --text-link-hover: #353430;
-    --rec-display: none;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --subtitle-background-color: #ff8dcb;
+    --color-subtitle: #353430;
+    --color-no-focus: #ffc2e6;
+    --color-decorated-zone: #353430;
+    --color-text: #353430;
+    --color-title: #353430;
+    --rec: #00000000;
+    --border-button: #32312d66;
   }
 }
