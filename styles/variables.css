@@ -1,34 +1,25 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
 :root {
-  --main-font: "IBM Plex Mono", monospace;
-  --main-bg-color: #000028;
-  --main-bg-image: url("../images/cover-image-dark.png");
-  --main-text-color: #000028;
-  --article-text-color: #f1b2ce;
-  --header-title-color: #db00ff;
-  --footer-title-color: #db00ff;
-  --accent-color: #ff0070;
-  --menu-hover-color: #ff007066;
-  --menu-text-color: #ff0070;
-  --main-heading-color: #ff0070;
-  --main-gap: 20px;
-  --main-text-size: 18px;
-  --main-font-weight: 700;
-  --article-font-weight: 400;
-  --main-line-height: 23.4px;
-  --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /*адаптивный размер заголовка с clamp(): 
-  *минимальное значение 7.25rem (116px) 
-  *максимальное 7.5rem (120px)*/
-  --gallery-gap: 20px;
-  --rec-display: inline-block;
-  --text-link-hover: #f1b2ce;
+  --background-color: #000028;
+  --subtitle-background-color: #ff0070;
+  --color-subtitle: #000028;
+  --color-no-focus: #db00ff;
+  --color-decorated-zone: #ff0070;
+  --color-text: #f1b2ce;
+  --color-title: #ff0070;
+  --rec: #ff0070;
+  --border-button: #ff007066;
+  --background-image: url(../images/cover-image-dark.png);
+  --padding: 10px;
 }
 
-@media (width >=768px) {
+
+@media (width >= 768px) {
   :root {
-    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    /*новый адаптивный расчет размера заголовка: 
-    *минимальное 7.5rem (120px) 
-    *максимальное 9.8125rem (157px)*/
+    --padding: 20px;
   }
 }
