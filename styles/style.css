@@ -109,7 +109,8 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 11px;
+  padding-left: 23px;
 }
 
 .header__theme-menu-item {
@@ -123,7 +124,7 @@
     7.25rem,
     7.0115rem + 1.0178vw,
     7.5rem
-  ); /*плавное изменение размера*/
+  ); /*плавное иззменение размера*/
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--subtitle-background-color);
 }
@@ -217,12 +218,12 @@
 
 .pictures {
   display: grid;
-  gap: 20px;
+  gap: 11px;
 }
 
 .gallery {
   display: grid;
-  gap: 10px;
+  gap: 11px;
   grid-template-columns: 1fr;
 }
 
@@ -242,9 +243,9 @@
 .text-block_title {
   background-color: var(--subtitle-background-color);
   color: var(--color-subtitle);
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", sans-serif; /* Добавляем явное указание шрифта */
   font-weight: 700;
-  font-size: 18px;
+  font-size: 18px; /* Явно указываем размер шрифта */
   font-style: normal;
   line-height: 23.4px;
 }
@@ -324,6 +325,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
+
+  .pictures {
+  gap: 20px;
+}
 
   .sunset {
     grid-column: span 2;
