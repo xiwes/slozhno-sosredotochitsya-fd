@@ -149,6 +149,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+  align-items: start;
 }
 
 .main__section-title {
@@ -162,10 +163,11 @@
 
 .main__section-article {
   font-family: "IBM Plex Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  display: grid;
   gap: 20px;
 }
 
